@@ -12,6 +12,7 @@ public class Main {
 		System.out.println("Inserisci un anno");
 		int anno = input.nextInt();
 		annoBisesitile(anno);
+		input.close();
 	}
 
 	public static void pariDispari(String stringa) {
