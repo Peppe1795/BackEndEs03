@@ -12,14 +12,17 @@ public class Main {
 		do {
 			System.out.println("Inserisci una stringa");
 			frase = input.nextLine();
-
-			String[] nomi = frase.split("");
-			for (int i = 0; i < nomi.length; i++) {
-				System.out.print(nomi[i] + ",");
+			if (!frase.equals(x)) {
+				String[] nomi = frase.split("");
+				for (int i = 0; i < nomi.length; i++) {
+					System.out.print(nomi[i] + ",");
+				}
 			}
+
 			System.out.println();
 		} while (!frase.equals(x));
 		input.close();
+		System.out.println("programma terminato");
 	}
 
 }
